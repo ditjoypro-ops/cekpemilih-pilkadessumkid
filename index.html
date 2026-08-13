@@ -357,7 +357,7 @@ function showResult(found){
     resultTitle.style.color = '#A63232';
     resultBody.textContent = 'Nama dan tanggal lahir yang Anda masukkan belum tercatat dalam DPS. Ini bisa jadi karena penulisan nama berbeda dari KTP, atau memang belum terdaftar. Silakan hubungi panitia untuk konfirmasi dan pendaftaran.';
 
-    const msg = encodeURIComponent(`Halo Panitia, saya sudah cek status DPS Pilkades namun belum ditemukan. Nama saya: `);
+    const msg = encodeURIComponent(`Halo Panitia, saya sudah cek status DPS Pilkades namun belum ditemukan. Nama saya: (isi nama anda) `);
     const a = document.createElement('a');
     a.href = `https://wa.me/${WA_NUMBER}?text=${msg}`;
     a.target = '_blank';
